@@ -4,7 +4,7 @@ import sdk from "./initialize-sdk.js";
   try {
     const voteContractAddress = await sdk.deployer.deployVote({
       name: "LR Dao's Proposals",
-      voting_token_address: "0x6eefd78C9C73505AA71A13FeE31D9718775c9086",
+      voting_token_address: "0xa0E3df5969ba5C424a59A2395A8fc804C47b64c4"/*0x6eefd78C9C73505AA71A13FeE31D9718775c9086*/,
       voting_delay_in_blocks: 0,
       voting_period_in_blocks: 6570,
       voting_quorum_fraction: 0,

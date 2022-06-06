@@ -1,10 +1,10 @@
 import sdk from "./initialize-sdk.js";
 
 const editionDrop = sdk.getEditionDrop(
-  "0x2f66A5A2BCB272FFC9EB873E3482A539BEB6f02a"
+  "0x5aB612f7F170943be517aC9693b57daFc595bA5C"
 );
 
-const token = sdk.getToken("0x6eefd78C9C73505AA71A13FeE31D9718775c9086");
+const token = sdk.getToken("0xa0E3df5969ba5C424a59A2395A8fc804C47b64c4"/*0x6eefd78C9C73505AA71A13FeE31D9718775c9086*/);
 
 (async () => {
   try {
