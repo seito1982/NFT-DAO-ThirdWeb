@@ -27,13 +27,13 @@ const token = sdk.getToken("0xa0E3df5969ba5C424a59A2395A8fc804C47b64c4"/*0x6eefd
         toAddress: address,
         amount: randomAmount,
       };
-
       return airdropTarget;
     });
 
     console.log("🌈 Starting airdrop...");
 
     await token.transferBatch(airdropTargets);
+    console.log(airdropTargets);
     console.log(
       "✅ Successfully airdropped tokens to all the holders of the NFT!"
     );

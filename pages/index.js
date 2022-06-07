@@ -16,7 +16,7 @@ export default function Home() {
     "0x5aB612f7F170943be517aC9693b57daFc595bA5C"
   );
   const token = useToken("0xa0E3df5969ba5C424a59A2395A8fc804C47b64c4"/*0x6eefd78C9C73505AA71A13FeE31D9718775c9086*/);
-  const vote = useVote("0x31c5840b31A1F97745bDCbB1E46954b686828E0F");
+  const vote = useVote("0x09fE8B308F78bE6aAB795f6d51622326239be84E"/*"0x31c5840b31A1F97745bDCbB1E46954b686828E0F"*/);
 
   const [hasClaimedNFT, setHasClaimedNFT] = useState(false);
   const [isClaiming, setIsClaiming] = useState(false);
@@ -73,6 +73,8 @@ export default function Home() {
 
     const checkIfUserHasVoted = async () => {
       try {
+        console.log(proposals);
+        
         const hasVoted = await vote.hasVoted(proposals[0].proposalId, address);
         setHasVoted(hasVoted);
       } catch (error) {
